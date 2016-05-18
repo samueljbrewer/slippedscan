@@ -45,12 +45,7 @@ def message():
     return message
 
 def send_simple_message():
-    return requests.post(
-        "https://api.mailgun.net/v3/sandboxbd78fb8b18124f3784b171f6f049ee61.mailgun.org/messages",
-        auth=("api", "key-d453da24c7f7d4079c2862bebba466ee"),
-        data={"from": "Mailgun Sandbox <postmaster@sandboxbd78fb8b18124f3784b171f6f049ee61.mailgun.org>",
-              "to": "Sam <samueljbrewer@gmail.com>",
-              "subject": "slippedisc alert",
-              "text": message()})
+    return requests.post()
+#MailGun info here
 
 send_simple_message()
