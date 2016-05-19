@@ -32,7 +32,7 @@ def filecheck():
     datafile = file("slippedtext.txt")
     found = []
     for text in datafile:
-        if "Boston" in text or "Nelsons" in text or "Andris" in text or "Lockhart" in text or "BSO" in text or "John Williams" in text or "Women" in text:
+        if "Boston" in text or "Nelsons" in text or "Andris" in text or "Lockhart" in text or "BSO" in text or "John Williams" in text:
             found.append(text)
     print found
     return found
